@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INVOICE</title>
+</head>
+<body>
+    <h2>INVOICE - ATN COMPANY</h2>
+<h4>Customer infomation</h4>
+    <p>This form is filled every time a customer purchases an item</p>
+    <form action="connect.php" method="post">
+        <p>
+            <label for="product name">customername<sup>*</sup></label>
+            <input type="text" name="customername" id="product name">
+        </p>
+        <p>
+            <label for="productcat">So Luong Mua</label>
+            <input type="text" name="purchaseprice" id="productcat">
+        </p>
+
+        <p>
+            <label for="price">Gia Ban 1 Don Vi</label>
+            <input type="text" name="saleprice" id="price">
+        </p>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

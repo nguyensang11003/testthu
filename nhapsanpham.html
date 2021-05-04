@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>INVOICE</title>
+  </head>
+  <script type="text/javascript">
+
+          function shownhap(){
+              location.assign("nhapsanpham.html");
+          }
+  </script>
+  <body>
+      <h2>INVOICE - ATN COMPANY</h2>
+      <h4>HOA DON NHAP SAN PHAM</h4>
+      <p>This form is filled every time a customer purchases an item</p>
+      <form action="connect.php" method="post">
+          <p>
+              <label for="productid">productcode<sup>*</sup></label>
+              <input type="text" name="productcode" id="productid">
+          </p>
+          <p>
+              <label for="productname">productname<sup>*</sup></label>
+              <input type="text" name="productname" id="productname">
+          </p>
+          <p>
+              <label for="productcat">purchaseprice</label>
+              <input type="text" name="numberentered" id="productcat">
+          </p>
+
+          <p>
+              <label for="price">saleprice</label>
+              <input type="text" name="saleprice" id="price">
+          </p>
+          <p>
+              <label for="description">Descriptions<sup>*</sup></label>
+              <textarea name="desc" id="desc" rows="5" cols="30"></textarea>
+          </p>
+          <input type="submit" value="Submit" onclick="showthongtinnhap()">
+          <input type="reset" value="Reset">
+      </form>
+  </body>
+</html>
